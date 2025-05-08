@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+
+    &:checked ~ .checkmark:after {
+      display: block;
+    }
+  }
+}
+
+.checkmark {
+  position: relative;
+  height: 12px;
+  width: 12px;
+  background-color: #e4e0e0;
+  border: 1px solid #8a8686;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+  left: 4px;
+  top: 1px;
+  width: 2px;
+  height: 6px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
