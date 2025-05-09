@@ -20,6 +20,9 @@
     .label {
       color: #8a8686;
     }
+    .checkmark {
+      opacity: 0.5;
+    }
   }
 }
 
