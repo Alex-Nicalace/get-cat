@@ -1,0 +1,22 @@
+.container {
+  max-width: 500px;
+  max-height: calc(100vh - 80px);
+  padding: 20px;
+  display: grid;
+  grid-template-rows: repeat(3, auto) 1fr;
+  row-gap: 15px;
+  background-color: white;
+}
+
+.button {
+  justify-self: start;
+  min-width: 350px;
+
+  @media (max-width: 500px) {
+    min-width: auto;
+  }
+}
+
+.pic {
+  /* height: 300px; */
+}

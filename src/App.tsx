@@ -1,11 +1,10 @@
-import Checkbox from './components/ui/Checkbox';
+import ViewCats from './components/ViewCats';
 
 function App() {
   return (
-    <>
-      <Checkbox label="Enabled" />
-      <Checkbox label="Auto-refresh every 5 seconds" />
-    </>
+    <div className="app">
+      <ViewCats />
+    </div>
   );
 }
 
