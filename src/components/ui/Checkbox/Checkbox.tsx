@@ -6,7 +6,7 @@ type TCheckboxProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'type'> & {
 };
 function Checkbox({ label, className, ...props }: TCheckboxProps) {
   return (
-    <label className={[classes.container, className].filter(Boolean).join(' ')}>
+    <label className={[classes.checkbox, className].filter(Boolean).join(' ')}>
       <input {...props} type="checkbox" />
       <span className={classes.checkmark}></span>
       {label && <span className={classes.label}>{label}</span>}

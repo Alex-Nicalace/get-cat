@@ -6,7 +6,7 @@ function Button({ children, className, ...props }: TButtonProps) {
   return (
     <button
       {...props}
-      className={[classes.container, className].filter(Boolean).join(' ')}
+      className={[classes.button, className].filter(Boolean).join(' ')}
     >
       {children}
     </button>
